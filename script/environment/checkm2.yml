@@ -1,0 +1,14 @@
+name: checkm2
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - pip
+  - pplacer
+  - mmseqs2
+  - prodigal
+  - python=3.8
+  - diamond
+prefix: /uoa/scratch/shared/Soil_Microbiology_Group/libs/conda/envs/checkm2

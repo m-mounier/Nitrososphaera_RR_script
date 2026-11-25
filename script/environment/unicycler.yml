@@ -1,0 +1,9 @@
+name: unicycler
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - unicycler
+prefix: /uoa/scratch/shared/Soil_Microbiology_Group/libs/conda/envs/unicycler

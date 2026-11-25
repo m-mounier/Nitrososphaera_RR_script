@@ -1,0 +1,12 @@
+name: genome_assembly
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - flye
+  - polypolish
+  - bwa
+prefix: 
+  /uoa/scratch/shared/Soil_Microbiology_Group/libs/conda/envs/genome_assembly

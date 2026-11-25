@@ -1,0 +1,12 @@
+name: phylo_eggnog
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - python=3.11
+  - eggnog-mapper=2.1.13
+  - hmmer
+  - diamond
+prefix: /uoa/scratch/shared/Soil_Microbiology_Group/libs/conda/envs/phylo_eggnog

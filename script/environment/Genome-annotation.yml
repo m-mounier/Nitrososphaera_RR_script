@@ -1,0 +1,15 @@
+name: Genome-annotation
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - prodigal
+  - kofamscan
+  - python=3
+  - prokka
+  - ca-certificates
+  - openssl
+prefix: 
+  /uoa/scratch/shared/Soil_Microbiology_Group/libs/conda/envs/Genome-annotation

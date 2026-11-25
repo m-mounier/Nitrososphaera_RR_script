@@ -1,0 +1,42 @@
+name: phylogeny
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - checkm-genome=1.2.1
+  - prodigal
+  - blast
+  - hmmer
+  - curl
+  - prokka
+  - mafft
+  - phipack
+  - setuptools
+  - tqdm
+  - requests
+  - pysam
+  - matplotlib
+  - numpy
+  - gtdbtk=2.4.0
+  - mmseqs2
+  - diamond
+  - pplacer
+  - iqtree
+  - trimal
+  - r-base
+  - seqkit
+  - r-ape
+  - emboss
+  - fasttree
+  - aniclustermap
+  - csvkit
+  - ezaai
+  - pyani-plus
+  - eggnog-mapper
+  - spades
+variables:
+  GTDBTK_DATA_PATH: 
+    /uoa/scratch/shared/Soil_Microbiology_Group/Reference_databases/GTDB-Tk_r220
+prefix: /uoa/scratch/shared/Soil_Microbiology_Group/libs/conda/envs/phylogeny

@@ -1,0 +1,9 @@
+name: hhsuite
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - r
+dependencies:
+  - hhsuite
+prefix: /uoa/scratch/shared/Soil_Microbiology_Group/libs/conda/envs/hhsuite
