@@ -1,19 +1,3 @@
-#!/bin/bash
-#SBATCH --job-name=prokka_Annotate
-#SBATCH --partition=spot-compute
-#SBATCH --nodes=1 # number of nodes
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
-#SBATCH --mem=16G
-#SBATCH --time=4:00:00
-#SBATCH -o /uoa/scratch/shared/Soil_Microbiology_Group/Projects/2021_CF10434-51_Jasmeet_RR-minion-genome/2026_Sequencing/slurm_report/prokka_annotation_20260126.out
-#SBATCH -e /uoa/scratch/shared/Soil_Microbiology_Group/Projects/2021_CF10434-51_Jasmeet_RR-minion-genome/2026_Sequencing/slurm_report/prokka_annotation_20260126.err
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=r06mm24@abdn.ac.uk   #change to your email adress
-
-# === USAGE ===
-# sbatch /uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/Maxwell_git/RR_Jasmeet/prokka.sh
-
 
 echo ">>>> Prokka annotation started at $(date)"
 
@@ -31,7 +15,7 @@ prokka -v
 # ---------------------------------------------------------
 # Define directories
 # ---------------------------------------------------------
-WORKDIR_1="/uoa/scratch/shared/Soil_Microbiology_Group/Projects/2021_CF10434-51_Jasmeet_RR-minion-genome/2026_Sequencing/LongShort_assembly"
+WORKDIR_1="path/you/need/2026_Sequencing/LongShort_assembly"
 fasta_file_1="$WORKDIR_1/Polypolish/assembly_RR_polypolish.fasta"
 
 
