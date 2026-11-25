@@ -1,8 +1,5 @@
-#!/usr/bin/env bash
 
-# /uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/Maxwell_git/RR_Jasmeet/extract_proteins.sh
-
-WORKDIR="/uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/2025_RR_Jasmeet"
+WORKDIR="path/you/need/"
 FAA="$WORKDIR/assembly_RR/assembly_RR.faa"        # path to .faa
 LIST="$WORKDIR/to_identify.txt"       # path to list of IDs of interest that need to be extracted
 OUTDIR="$WORKDIR/protein_to_id"     # output directory
