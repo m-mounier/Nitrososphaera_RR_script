@@ -1,4 +1,3 @@
-# python3 /uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/Maxwell_git/RR_Jasmeet/primer_spe_summary.py
 
 import re
 import csv
