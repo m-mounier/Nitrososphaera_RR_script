@@ -1,22 +1,6 @@
-#!/bin/bash
-#SBATCH --job-name=RR_gtdb_tk_tree
-#SBATCH --partition=spot-compute
-#SBATCH --nodes=1 # number of nodes
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8
-#SBATCH --mem=64G
-#SBATCH --time=06:00:00
-#SBATCH -o /uoa/scratch/shared/Soil_Microbiology_Group/Projects/2021_CF10434-51_Jasmeet_RR-minion-genome/2026_Sequencing/slurm_report/gtdb_tree_all_%j.out 
-#SBATCH -e/uoa/scratch/shared/Soil_Microbiology_Group/Projects/2021_CF10434-51_Jasmeet_RR-minion-genome/2026_Sequencing/slurm_report/gtdb_tree_all_%j.err
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=r06mm24@abdn.ac.uk   #change to your email adress
-
-# sbatch /uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/Maxwell_git/RR_Jasmeet/gtdb_tk_tree.sh
-
-less /uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/Maxwell_git/RR_Jasmeet/gtdb_tk_tree.sh
 
 # ----------------- USER PATHS -----------------
-WORKDIR="/uoa/scratch/shared/Soil_Microbiology_Group/Projects/2021_CF10434-51_Jasmeet_RR-minion-genome/2026_Sequencing/LongShort_assembly/presence_absence_genes/reduce_phylo/reduce_60"
+WORKDIR="path/you/need/2026_Sequencing/LongShort_assembly/presence_absence_genes/reduce_phylo/reduce_60"
 GENOME_DIR="$WORKDIR/genome"
 OUT_DIR="$WORKDIR/GTDB_tree"
 THREADS=4
