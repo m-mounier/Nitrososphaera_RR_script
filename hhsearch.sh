@@ -1,24 +1,6 @@
-#!/bin/bash
-#SBATCH --job-name=RR_hhsearch
-#SBATCH --partition=uoa-compute
-#SBATCH --nodes=1 # number of nodes
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8
-#SBATCH --mem=64G
-#SBATCH --time=00:00:00
-#SBATCH -o /uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/2025_RR_Jasmeet/slurm_report/hhsearch_20251205.out #for the report put the date of the job year/month/day
-#SBATCH -e /uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/2025_RR_Jasmeet/slurm_report/hhsearch_20251205.err
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=r06mm24@abdn.ac.uk   #change to your email adress
-
-# sbatch /uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/Maxwell_git/RR_Jasmeet/hhsearch.sh
-
-#############################
-# USER PATHS
-#############################
 
 # Main working directory
-WORKDIR="/uoa/scratch/shared/Soil_Microbiology_Group/Users/MaevaMounier/2025_RR_Jasmeet"
+WORKDIR="path/you/need/"
 
 # Directory containing your .a3m files
 A3M_DIR="$WORKDIR/analysis/hhsuite/UniRef30_2023_02"
@@ -27,7 +9,7 @@ A3M_DIR="$WORKDIR/analysis/hhsuite/UniRef30_2023_02"
 OUT_DIR="$WORKDIR/analysis/hhsuite/pfam_v35"
 
 # Pfam database directory
-PFAM_DB="/uoa/scratch/shared/Soil_Microbiology_Group/Reference_databases/hhsuiteDB/hhsuite_dbs/pfama_v35/Pfam35/pfama"
+PFAM_DB="path/you/need/Reference_databases/hhsuiteDB/hhsuite_dbs/pfama_v35/Pfam35/pfama"
 
 #############################
 # ENVIRONMENT
